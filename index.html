@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Chamados</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Sistema de Chamados</h1>
+    <h2>Abrir Chamados</h2>
+    <form id="formChamado">
+        <label >Equipamento</label> <br>
+        <input type="text" id="equipamento" required><br>
+        <label >Problema</label>
+        <input type="text" id="problema" required><br>
+        <label >Descrição</label>
+        <input type="text" id="descricao" required><br>
+        <label >Prioridade</label>
+        <input type="text" id="prioridade" required><br>
+        <label >Status</label>
+        <input type="text" id="status" required><br>
+        <button type="submit">Cadastrar Chamados </button>
+    </form>
+    <h2>Chamados Cadastrados</h2>
+    <div id="lista">Carregando...</div>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
